@@ -1,0 +1,9 @@
+dir: "{{name}}"
+children:
+  - dir: src
+    children:
+      - dir: name
+  - dir: tests
+    children:
+      - file: "{{name}}2.txt"
+  - file: file1.txt

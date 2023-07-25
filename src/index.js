@@ -5,15 +5,6 @@ import mustache from "mustache";
 
 const name = process.argv[2] || "project";
 
-// const structure = {
-//   dir: "{name}}",
-//   children: [
-//     { dir: "src", children: [{ dir: "name" }] },
-//     { dir: "tests", children: [{ file: "file2.txt" }] },
-//     { file: "file1.txt" },
-//   ],
-// };
-
 const parsed = yaml.parse(fse.readFileSync("./src/file.yaml", "utf8"));
 
 function createDirectory(obj, parentDir = ".") {
