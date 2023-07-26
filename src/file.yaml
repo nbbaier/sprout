@@ -1,9 +1,17 @@
-dir: "{{name}}"
-children:
-  - dir: src
-    children:
-      - dir: name
-  - dir: tests
-    children:
-      - file: "{{name}}2.txt"
-  - file: file1.txt
+structure:
+  dir: "{{name}}"
+  children:
+    - dir: src
+      children:
+        - dir: name
+    - dir: tests
+      children:
+        - file: "not_copied1.txt"
+    - dir: tests2
+      children:
+        - file: "not_copied2.txt"
+    - file: copied.txt
+      copy: true
+      sourcePath: "/Users/nicholasbaier/"
+commands:
+  - echo hello world
