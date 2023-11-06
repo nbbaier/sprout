@@ -22,5 +22,11 @@
     "url": "git+https://github.com/nbbaier/sprout.git"
   },
   "keywords": [],
-  "homepage": "https://github.com/nbbaier/sprout#readme"
+  "homepage": "https://github.com/nbbaier/sprout#readme",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
