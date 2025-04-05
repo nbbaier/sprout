@@ -5,7 +5,7 @@ import { cac } from "cac";
 const cli = cac("my-program");
 
 cli.option("--type <type>", "Choose a project type", {
-  default: "node",
+	default: "node",
 });
 
 const parsed = cli.parse();

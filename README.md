@@ -1,3 +1,3 @@
 # sprout
 
-Creating small scraft projects from (mostly) yaml templates.
+Creating small scratch projects from (mostly) yaml templates.
